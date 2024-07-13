@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>App</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+    <input type="text" id="search" placeholder="Search for places ...">
+    <div id="autocomplete-list"></div>
+
+<div id="map-container">
+    <div id="map"></div>
+</div>
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Leaflet-Control-Geocoder JavaScript -->
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<!-- External JavaScript -->
+<script src="scripts.js"></script>
+
+<script>
+    particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+        console.log('particles.js loaded - callback');
+    });
+</script>
+
+
+</body>
+</html>
